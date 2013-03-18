@@ -1,0 +1,20 @@
+{
+	"name": "typo3dk/typo3dk",
+	"type": "typo3-flow-site",
+	"description": "typo3.dk site package",
+	"license": "GPL-3.0+",
+	"authors": [{
+		"name": "Jan-Erik Revsbech",
+		"email": "janerik@moc.net",
+		"homepage": "http://moc.net/",
+		"role": "Developer"
+	}],
+	"require": {
+		"typo3/neos": "*"
+	},
+	"autoload": {
+		"psr-0": {
+			"TYPO3DK\typo3dk": "Classes"
+		}
+	}
+}
