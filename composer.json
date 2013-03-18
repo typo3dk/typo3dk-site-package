@@ -14,7 +14,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"TYPO3DK\typo3dk": "Classes"
+			"TYPO3DK\\typo3dk": "Classes"
 		}
 	}
 }
