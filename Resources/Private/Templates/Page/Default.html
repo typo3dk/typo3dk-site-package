@@ -9,19 +9,26 @@
 	<meta name="keywords" content="" />
 	<meta name="DC.title" content="" />
 	<meta name="DC.creator" content="" />
-	<title>Template for your site typo3dk</title>
+	<title>typo3.dk</title>
 	<f:base />
 	<f:section name="stylesheets">
-		<!-- put your stylesheet inclusions here, they will be included in your website by TypoScript -->
+		<link rel="stylesheet" href="../../../Public/Stylesheets/normalize.css">
+		<link rel="stylesheet" href="../../../Public/Stylesheets/Screen.css" media="screen">
+		<link rel="stylesheet" href="../../../Public/Stylesheets/Print.css" media="print">
 	</f:section>
-	
+
 </head>
 <body>
 <f:section name="body">
-	<h1>A freshly created template for your new site!</h1>
-	<nav class="menu"><ts:renderTypoScript path="parts/menu" /></nav>
-	<nav class="breadcrumb"><ts:renderTypoScript path="parts/breadcrumb" /></nav>
-	<div class="content"><ts:renderTypoScript path="sections/main" /></div>
+	<div class="site-container t3-reloadable-content">
+		<h1>A freshly created template for your new site!</h1>
+		<nav class="menu"><ts:renderTypoScript path="parts/menu" /></nav>
+		<nav class="breadcrumb"><ts:renderTypoScript path="parts/breadcrumb" /></nav>
+		<div class="content"><ts:renderTypoScript path="sections/main" /></div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+ 	<script src="../../../Public/JavaScript/Main.js"></script>
+
 </f:section>
 </body>
 </html>
