@@ -10,6 +10,12 @@ page.headerData {
 		templatePath = 'resource://TYPO3DK.typo3dk/Private/Templates/Page/Default.html'
 		sectionName = 'stylesheets'
 	}
+	javascripts = TYPO3.TypoScript:Template
+	javascripts {
+		templatePath = 'resource://TYPO3DK.typo3dk/Private/Templates/Page/Default.html'
+		sectionName = 'javascripts'
+	}
+
 }
 
 page.body {
@@ -17,11 +23,17 @@ page.body {
 	sectionName = 'body'
 	parts {
 		menu = Menu
+		menu {
+			entryLevel = 2
+		}
 		breadcrumb =  Breadcrumb
 	}
 		// These are your content areas, you can define as many as you want, just name them and the nodePath.
 	sections {
 		main = Section
-		main.nodePath = 'main'
+		main << 1.wrap(prefix:'<section>', suffix: '</section>')
+		main {
+			nodePath = 'main'
+		}
 	}
 }
