@@ -7,7 +7,7 @@
 
 $column-width   : 4em;
 $gutter-width   : 1em;
-$grid-padding   : 0;
+$grid-padding   : 1em;
 
 $total-columns  : 5;
 $tablet 	: 10;
@@ -40,6 +40,11 @@ h1 {
 
 h2 {
     font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
     margin-bottom: 0.5em;
 }
 
@@ -85,7 +90,9 @@ section {
     margin-bottom: 1em;
     img {
         width: 100%;
-    }    
+        &.margin-bottom { margin-bottom: 1em; }
+    }
+    p { margin-bottom: 0; }
 }
 
 .box {
@@ -116,6 +123,7 @@ section { clear: both; }
     .span-10-12 { @include span-columns(10, $desktop); }
     .span-3-10 { @include span-columns(3, 10); }
     .span-7-10 { @include span-columns(7, 10); }    
+    .span-5-10 { @include span-columns(5, 10); }
     
     .last { @include omega; }
     
@@ -145,9 +153,6 @@ section { clear: both; }
             }
         }
             
-    }
-    nav.submenu {
-        padding: 0 1em 0 1em;
     }
 
 
