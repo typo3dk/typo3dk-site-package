@@ -5,8 +5,9 @@ require "susy"
 http_path = "/"
 css_dir = "../../Public/Stylesheets"
 sass_dir = "../SASS"
-images_dir = "../Public/Images"
-javascripts_dir = "../Public/JavaScript"
+images_dir = "../../Public/Images"
+javascripts_dir = "../../Public/JavaScript"
+fonts_dir = "../../Public/Fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
