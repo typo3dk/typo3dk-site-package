@@ -90,7 +90,7 @@ section {
     margin-bottom: 1em;
     img {
         width: 100%;
-        &.margin-bottom { margin-bottom: 1em; }
+        margin-bottom: 1em;
     }
     p { margin-bottom: 0; }
 }
@@ -102,6 +102,9 @@ section {
 .logo {
     height: 5em;
     img { height: 100%; }
+}
+.no-margin-bottom {
+    margin-bottom: 0 !important;
 }
 
 section { clear: both; }
