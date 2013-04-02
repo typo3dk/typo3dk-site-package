@@ -138,8 +138,9 @@ section { clear: both; }
             height: 1em;
             position: relative;
             top: 50%;
+            float: right;
             li {
-                float: right;
+                float: left;
                 margin-left: 1em;
             }
         }
