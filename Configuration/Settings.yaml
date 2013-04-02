@@ -1,0 +1,17 @@
+TYPO3:
+  TYPO3CR:
+    contentTypes:
+      'TYPO3.Neos.NodeTypes:Page':
+        properties:
+          description:
+            type: string
+            label: 'Page description'
+            group: 'meta'
+          keywords:
+            type: string
+            label: 'Page keywords'
+            group: 'meta'
+        groups:
+          meta:
+            label: 'Meta data'
+            priority: 10
