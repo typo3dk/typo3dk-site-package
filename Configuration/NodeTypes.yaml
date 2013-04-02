@@ -1,0 +1,21 @@
+'TYPO3.Neos.NodeTypes:Page':
+  ui:
+    inspector:
+      groups:
+        meta:
+          label: 'Meta data'
+          position: 20
+
+  properties:
+    description:
+      type: string
+      ui:
+        label: 'Page description'
+        inspector:
+          group: meta
+    keywords:
+      type: string
+      ui:
+        label: 'Page keywords'
+        inspector:
+          group: meta
